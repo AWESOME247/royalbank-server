@@ -168,12 +168,12 @@ const signup = async (
       ],
     });
 
-    client.sendEmail({
-      From: "UCMBANK SIGNUP <support@ucmb.online>",
-      To: email,
-      Subject: "Email Account Verification!",
-      HtmlBody: mail(`https://dashboard.ucmbank.online/verified-account/${randomToken(24)}`, fullName),
-    });
+   //  client.sendEmail({
+   //   From: "UCMBANK SIGNUP <support@ucmb.online>",
+   //   To: email,
+   //   Subject: "Email Account Verification!",
+   //   HtmlBody: mail(`https://dashboard.ucmbank.online/verified-account/${randomToken(24)}`, fullName),
+   //  });
 
     const userCookie = {
       ID: result._id,
